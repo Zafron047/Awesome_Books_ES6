@@ -1,7 +1,6 @@
 class BookShelf {
   constructor() {
     this.section = document.getElementById('book-section');
-    this.form = document.querySelector('form');
     this.titleInput = document.getElementById('title-input');
     this.authorInput = document.getElementById('author-input');
     this.DATA = JSON.parse(localStorage.getItem('data')) || [];
