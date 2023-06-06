@@ -23,9 +23,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Awesome Books Project] <a name="about-project"></a>
+# 📖 [Awesome Books ES6 Project] <a name="about-project"></a>
 
-**[Awesome Books]** is a project that we have developed to showcase our skills in DOM Manipulation and Dynamic Functionality application.
+**[Awesome Books ES6]** is a project that we have developed to showcase our skills in DOM Manipulation and Dynamic Functionality application. I have further Enhanced it with introduction to modules and modern ES6 functionalities.
 
 <br>
 
