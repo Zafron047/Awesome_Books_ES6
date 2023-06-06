@@ -93,6 +93,4 @@ class BookShelf {
   }
 }
 
-
-
 export default BookShelf;
