@@ -1,8 +1,8 @@
-import { DateTime } from "./modules/luxon";
+import { DateTime } from './luxon.js';
 
 const date = () => {
     const now = DateTime.now();
-    document.querySelector('#date').innerHTML = dt.toLocaleString(DateTime.DATETIME_MED);
+    document.querySelector('#date').innerHTML = now.toLocaleString(DateTime.DATETIME_MED);
 };
 
 export default date;
