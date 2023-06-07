@@ -20,12 +20,12 @@ class BookShelf {
     }
   }
 
-  add(author, title) {
+  add = (author, title) => {
     this.DATA = this.DATA.concat({ author, title });
     localStorage.setItem('data', JSON.stringify(this.DATA));
   }
 
-  remove(author, title) {
+  remove = (author, title) => {
     this.DATA = this.DATA.filter(
       (b) => b.author !== author || b.title !== title,
     );
@@ -33,7 +33,7 @@ class BookShelf {
     this.counter -= 1;
   }
 
-  show() {
+  show = () => {
     this.section.innerHTML = '';
     this.DATA.forEach((data) => {
       this.counter += 1;
@@ -58,7 +58,7 @@ class BookShelf {
     });
   }
 
-  init() {
+  init = () => {
     this.form.addEventListener('submit', (e) => {
       e.preventDefault();
       this.add(this.authorInput.value, this.titleInput.value);
@@ -67,7 +67,7 @@ class BookShelf {
     });
   }
 
-  showListPage() {
+  showListPage = () => {
     this.list.addEventListener('click', () => {
       this.booksWrapper.style.display = 'block';
       this.form.style.display = 'none';
@@ -75,7 +75,7 @@ class BookShelf {
     });
   }
 
-  showFormPage() {
+  showFormPage = () => {
     this.addNew.addEventListener('click', () => {
       this.form.style.display = 'flex';
       this.booksWrapper.style.display = 'none';
@@ -83,7 +83,7 @@ class BookShelf {
     });
   }
 
-  showContactPage() {
+  showContactPage = () => {
     this.contact.addEventListener('click', () => {
       this.contactPage.style.display = 'flex';
       this.form.style.display = 'none';
